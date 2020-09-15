@@ -1,0 +1,90 @@
+html{
+  background-color: blanchedalmond;
+  color: rgba(0,0,0,0.75);
+  margin:0;
+}
+.App {
+  text-align: center;
+}
+
+/* Navbar component */
+.navbar{
+  background-color: cadetblue;
+  
+}
+.navbar-link{
+  padding-left: 0;
+  margin: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.link-item{
+  width: 80px;
+}
+/* Home Page */
+.bg-slider{
+  height: 500px !important;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.slide-img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide-content{
+  margin: auto;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+/* Login or Signup components */
+.link-transfer{
+  font-weight: bold;
+  margin-left: 0.6rem;
+}
+
+/* Card */
+.card-action-area{
+  padding-top: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+.card-desc-area{
+  height: 71px;
+  /* padding: 0; doesn't work, have to overwrite it with hook? */
+}
+.card-rating-box{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 20%;
+}
+.card-rating{
+  width: 120px;
+  transform: scale(0.7)
+}
+.rating-text{
+  font-size: 13px;
+}
+.heart{
+  color:rgba(0,0,0, 0.65);
+  margin-left: 0.3em;
+  transform: scale(0.8);
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.heart:hover{
+  color: rgba(247, 99, 62, 0.65);
+  transform: scale(1);
+}
